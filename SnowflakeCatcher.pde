@@ -1,6 +1,8 @@
+
 void setup()
 {
-  //your code here
+  background (0);
+  size (600,600);
 }
 void draw()
 {
@@ -13,14 +15,15 @@ void mouseDragged()
 
 class Snowflake
 {
-  //class member variable declarations
+  int X,Y;
   Snowflake()
   {
-    //class member variable initializations
+    X = (int)(Math.random()*601)+1;
+    Y = 0;
   }
   void show()
   {
-    //your code here
+    //Money image
   }
   void lookDown()
   {
@@ -28,16 +31,14 @@ class Snowflake
   }
   void erase()
   {
-    //your code here
+   
   }
   void move()
   {
-    //your code here
+    Y = Y + 10;
   }
   void wrap()
   {
     //your code here
   }
 }
-
-
