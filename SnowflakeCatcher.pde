@@ -1,12 +1,14 @@
 
 void setup()
 {
+  snow = new Snowflake[5];
+  for (int i = 0; i < snow.length; i++)
   background (0);
   size (600,600);
 }
 void draw()
 {
-  //your code here
+ snow[i].show();
 }
 void mouseDragged()
 {
@@ -23,7 +25,7 @@ class Snowflake
   }
   void show()
   {
-    //Money image
+    ellipse (X,Y,10,10);
   }
   void lookDown()
   {
