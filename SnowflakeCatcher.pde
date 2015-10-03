@@ -32,8 +32,8 @@ void draw()
 }
 void mouseDragged()
 {
-  stroke(0,155,155);
-  strokeWeight(5);
+  stroke(40,40,40);
+  strokeWeight(20);
   line(pmouseX,pmouseY,mouseX,mouseY);
   strokeWeight(1);
   stroke(0);
@@ -61,7 +61,7 @@ class Snowflake
   }
   void show()
   {
-    fill(255);
+    fill(175,175,255);
     ellipse(x,y,5,5);
     //your code here
   }
